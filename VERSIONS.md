@@ -5,3 +5,4 @@
 | Date | Work ID | Scope | Title |
 |---|---|---|---|
 | 2026-11-19 | `fill-mod-101-voice-agent-position-solutions` | `mod-101-voice-agent-position` | Fill mod-101-voice-agent-position module exercise solutions |
+| 2026-11-20 | `fill-mod-102-speech-pipeline-foundations-solutions` | `mod-102-speech-pipeline-foundations` | Fill mod-102-speech-pipeline-foundations module exercise solutions |
