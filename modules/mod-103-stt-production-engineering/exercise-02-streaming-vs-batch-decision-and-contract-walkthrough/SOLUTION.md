@@ -42,7 +42,7 @@ Otherwise, batch. "We might want live someday" is not a reason to pay the stream
 | Post-call CSAT summary and action-item extraction | **Batch** | Not user-waiting; runs once when the call ends. Batch gives the richer transcript the LLM will summarise more cleanly. |
 | Trust-and-safety queue of flagged calls for human review | **Batch** | Analyst reads the transcript afterwards. Batch + diarisation + redaction, which is a feature set batch APIs tend to lead on. |
 | Live coaching whisper to a human sales rep during the call | **Streaming** | Rep-waiting. Insertion-latency budget is tight; the whisper is useless if it arrives after the moment passed. |
-| Meeting notes for an internal meeting-notes product | **Depends** — streaming if live-captions are the primary feature; batch if post-meeting summary is primary. Split the product's feature set across the two routes rather than forcing one. |
+| Meeting notes for an internal meeting-notes product | **Depends** | Streaming if live-captions are the primary feature; batch if post-meeting summary is primary. Split the product's feature set across the two routes rather than forcing one. |
 
 Note that voice agents sometimes run batch *alongside* streaming — the streaming path drives the live loop, and a batch pass runs at call-end against the recording to produce a higher-fidelity transcript for post-call analytics and eval. This is a common pattern; a mature answer calls it out.
 
